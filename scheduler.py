@@ -17,3 +17,13 @@ I = Task(id="I", weight=5, depends=[H, F])
 L = Task(id="L", weight=2, depends=[F])
 
 K = Task(id="K", weight=5, depends=[G])
+
+# all tasks A-K must be completed within 10 weeks
+# you're allocated 4 workers per week
+# the most workers on a given task is 2 per week
+# the most workers on all tasks for a given week is 5
+# putting an additional worker on a task (2 total) adds a $100 charge
+# charge $200 per worker per week
+# if you use an extra worker (5 total) it is a $300 charge for the week
+
+
